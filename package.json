@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "fabric": "^5.2.4",
+    "read-excel-file": "^5.4.7"
+  }
+}

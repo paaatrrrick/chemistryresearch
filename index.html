@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facilitation Coding</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3c50d1396b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="topText">
+            <h1>Upload your Excel file here</h1>
+            <p>Then Double Click the Image and press Save Image as ...</p>
+            <div class="input-rows">
+                <div class="input-pair">
+                    <p>Width:</p>
+                    <input type="number" class="numInput" id="width" value="4000">
+                </div>
+                <div class="input-pair">
+                    <p>Seconds Per Check Mark:</p>
+                    <input type="number" class="numInput" id="seconds" value="60">
+                </div>
+            </div>
+            <div class="input-pair">
+                <p>Check Marks until labeled Check Mark:</p>
+                <input type="number" class="numInput" id="checkInterval" value="10">
+            </div>
+        </div>
+        <div class="file-upload">
+            <input type="file" id="input" />
+            <i class="fa fa-arrow-up"></i>
+        </div>
+    </div>
+    <canvas id="canvas" width="20" height="20"></canvas>
+
+
+    <script src="https://kit.fontawesome.com/3c50d1396b.js" crossorigin="anonymous"></script>
+
+    <!-- <input type="file" id="input" /> -->
+    <script src="https://unpkg.com/read-excel-file@5.x/bundle/read-excel-file.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/5.2.4/fabric.min.js"
+        integrity="sha512-HkRNCiaZYxQAkHpLFYI90ObSzL0vaIXL8Xe3bM51vhdYI79RDFMLTAsmVH1xVPREmTlUWexgrQMk+c3RBTsLGw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./app.js"></script>
+
+</body>
+
+</html>
